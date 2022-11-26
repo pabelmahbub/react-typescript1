@@ -1,25 +1,31 @@
-import React, {FormEvent, useState} from 'react';
+import React, {ChangeEvent, FormEvent, useState} from 'react';
+import UserModel from '../types/models';
 
 interface User{
     name?:string,
-    job?:string
+    job?:string,
+    counter: number
 }
 const Counter = () => {
     const [counter, setCounter] = useState<number>(0);
-    const [user, setUser] = useState<User | null>(null);
+    // const [user, setUser] = useState<User | null>(null);
 
     const handleIncrease = () : void=>{
         setCounter(counter + 1)
 
     }
-    const handleSubmit =(e: FormEvent)=>{
-        e.preventDefault();
-        const userData ={
+    // const handleSubmit =(e: FormEvent<HTMLFormElement>)=>{
+    //     e.preventDefault();
+    //     const userData ={
 
-        }
-         setUser(userData)
+    //     }
+    //      setUser(userData)
 
-    }
+    // }
+
+    // const handleNameChange =(e: ChangeEvent<HTMLInputElement>)=>{
+
+    // }
 
 
   return (

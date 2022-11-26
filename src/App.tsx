@@ -26,9 +26,10 @@ const person:{name:string, age:number,profession:string} ={
 
 const App:React.FC =() =>{
   return (
-    <div>
-      <Users />
+    <div style={{textAlign:'center'}}>
       <Counter />
+      <Users />
+      
     </div>
   );
 }
